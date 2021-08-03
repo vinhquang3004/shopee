@@ -1,0 +1,45 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --test-color: #333;
+  --primary-color: #EE4D2D;
+}
+
+* {
+  box-sizing: inherit; /* inherit class parent chua thuoc tinh box-sizing */
+}
+html {
+  font-size: 62.5%; /* 10px */
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  /* màn hình lớn hơn 1200 thì kích thước tối đa grid chỉ là 1200 */
+  width: 1200px;
+  /* nếu màn hình nhỏ hơn 1200 thì kích thước sẽ bằng với kích thước màn hình điện thoại */
+  max-width: 100%;
+  /* tự động căn giữa khối khi nằm trong khối cha */
+  margin: 0 auto;
+}
+.grid__full-width {
+  /* trong TH ko muốn sử dụng width: 1200 */
+  width: 100%;
+}
+.grid__row {
+  /* Thằng nào nằm trong class này nằm trên cùng 1 hàng ngang */
+  display: flex;
+  /* nếu tổng độ dài các box vượt quá thì sẽ xuống hàng */
+  flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
