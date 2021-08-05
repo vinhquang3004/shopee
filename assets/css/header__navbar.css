@@ -1,0 +1,82 @@
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  height: var(--header__navbar-height);
+}
+.header__navbar-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header__navbar-item {
+  padding: 0 7px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+.header__navbar-item--has-notify:hover .header__notify {
+  display: block;
+}
+
+.header__navbar-item--has-qr:hover .header__qr {
+  display: block;
+}
+
+.header__navbar-item--bold {
+  font-weight: 500;
+}
+
+.header__navbar-icon-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.header__navbar-icon {
+  font-size: 1.8rem;
+  margin: 0 4px;
+}
+
+.header__navbar-item--no-pointer {
+  cursor: text;
+  color: var(--white-color);
+  align-items: stretch;
+}
+
+.header__navbar-item--separator::after {
+  height: 14px;
+  width: 1px;
+  content: "";
+  display: block;
+  position: absolute;
+
+  background-color: #fdb2a8;
+  align-content: center;
+  top: 10;
+  right: 0;
+}

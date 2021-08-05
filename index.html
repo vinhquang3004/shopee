@@ -11,6 +11,13 @@
     />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/register.css" />
+    <link rel="stylesheet" href="./assets/css/header__navbar.css" />
+    <link rel="stylesheet" href="./assets/css/header__qr.css" />
+    <link rel="stylesheet" href="./assets/css/header__notify.css" />
+    <link rel="stylesheet" href="./assets/css/header-with-search.css" />
+    <link rel="stylesheet" href="./assets/css/auth-form.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -88,7 +95,7 @@
               </li>
             </ul>
             <ul class="header__navbar-list">
-              <li class="header__navbar-item">
+              <li class="header__navbar-item header__navbar-item--has-notify">
                 <a href="" class="header__navbar-item-link">
                   <i class="header__navbar-icon far fa-bell"></i>
                   Thông báo
@@ -102,16 +109,17 @@
                     <li class="header__notify-item header__notify-item--viewed">
                       <a href="" class="header__notify-link">
                         <img
-                          src="https://cf.shopee.vn/file/e1b58f4236af37018c2353b85cb7b9a3_tn"
+                          src="./assets/img/loreal.jpg"
                           alt="Loreal image"
                           class="header__notify-img"
                         />
                         <div class="header__notify-info">
                           <span class="header__notify-name"
-                            >Mỹ phẩm Loreal chính hãng</span
+                            >Xác thực chính hãng nguồn gốc sản phẩm Ohui</span
                           >
                           <span class="header__notify-description"
-                            >Mô tả mỹ phẩm Loreal chính hãng</span
+                            >Ohui là giải pháp xác thực hàng chính hãng bằng
+                            công nghệ tiên tiến nhất hiện nay</span
                           >
                         </div>
                       </a>
@@ -119,16 +127,17 @@
                     <li class="header__notify-item">
                       <a href="" class="header__notify-link">
                         <img
-                          src="https://cf.shopee.vn/file/e1b58f4236af37018c2353b85cb7b9a3_tn"
+                          src="./assets/img/ohui-img3.jpg"
                           alt="Loreal image"
                           class="header__notify-img"
                         />
                         <div class="header__notify-info">
                           <span class="header__notify-name"
-                            >Mỹ phẩm Loreal chính hãng</span
+                            >Mỹ phẩm Loreal chính hãng Sale sốc bộ dưỡng Ohui
+                            The First tái tạo trẻ hóa da 70%</span
                           >
                           <span class="header__notify-description"
-                            >Mô tả mỹ phẩm Loreal chính hãng</span
+                            >Gié chi cbn 375.000 (gié 96c: 1.250.000 vnd).</span
                           >
                         </div>
                       </a>
@@ -136,16 +145,18 @@
                     <li class="header__notify-item">
                       <a href="" class="header__notify-link">
                         <img
-                          src="https://cf.shopee.vn/file/e1b58f4236af37018c2353b85cb7b9a3_tn"
+                          src="./assets/img/ohui-sale-off.jpg"
                           alt="Loreal image"
                           class="header__notify-img"
                         />
                         <div class="header__notify-info">
                           <span class="header__notify-name"
-                            >Mỹ phẩm Loreal chính hãng</span
+                            >Ohui chính thức ra mắt dòng son lì mới THE FIRST
+                            GENITURE LIPSTICK</span
                           >
                           <span class="header__notify-description"
-                            >Mô tả mỹ phẩm Loreal chính hãng</span
+                            >Một làn môi căng mềm, quyến rũ với sắc màu nổi bật
+                            luôn là điều mà các quý cô ao ước</span
                           >
                         </div>
                       </a>
@@ -177,12 +188,239 @@
               </li>
             </ul>
           </nav>
+          <!-- header-with-search -->
+          <div class="header-with-search">
+            <div class="header__logo">
+              <a href="" class="header__logo-a-img">
+                <img
+                  src="./assets/img/shopee-logo.png"
+                  alt="shopee-logo"
+                  class="header__logo-img"
+                />
+              </a>
+            </div>
+            <div class="header__search">
+              <div class="header__search-input-wrap">
+                <input
+                type="text"
+                class="header__search-input"
+                placeholder="Nhập để tìm kiếm sản phẩm"
+              />
+              <!-- Search History -->
+              <div class="header__search-history">
+                <h3>Lịch sử tìm kiếm</h3>
+                <ul class="header__search-history-list">
+                  <li class="header__search-history-item">
+                    <a href="">Kem dưỡng da</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="">Kem trị mụn</a>
+                  </li>
+                </ul>
+              </div>
+              </div>
+              <div class="header__search-select">
+                <span class="header__search-select-label">Trong shop</span>
+                <i class="header__search-select-icon fas fa-chevron-down"></i>
+                <ul class="header__search-option">
+                  <li class="header__search-option-li header__search-option-li--active">
+                    <span>Trong shop</span>
+                    <i class=" fas fa-check"></i>
+                  </li>
+                  <li class="header__search-option-li ">
+                    <span>Ngoài shop</span>
+                    <i class="fas fa-check"></i>
+                  </li>
+                </ul>
+              </div>
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fas fa-search"></i>
+              </button>
+            </div>
+
+            <!-- Cart layout -->
+            <div class="header__cart">
+              <i class="header__cart-icon fas fa-shopping-cart"></i>
+              <div class="header__cart-list header__cart-list--no-cart">
+                <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
       <div class="container"></div>
 
       <footer class="footer"></footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+        <div class="modal__inner">
+          <!-- Authenticate Form -->
+          <!-- register -->
+          <div class="auth-form">
+            <div class="auth-form__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng ký</h3>
+                <span class="auth-form__switch-button">Đăng nhập</span>
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Email của bạn"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Mật khẩu của bạn"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Nhập lại mật khẩu"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__aside">
+                <p class="auth-form__policy-text">
+                  Bằng việc đăng ký, bạn đã đồng ý với Shopee về
+                  <a href="" class="auth-form__policy-link"
+                    >Điều khoản dịch vụ</a
+                  >
+                  &
+                  <a href="" class="auth-form__policy-link"
+                    >Chính sách bảo mật</a
+                  >
+                </p>
+              </div>
+              <div class="auth-form__controls">
+                <button class="btn btn-normal auth-form__controls--back">
+                  Trở lại
+                </button>
+                <button class="btn btn--primary">Đăng ký</button>
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a
+                href=""
+                class="
+                  auth-form__socials-link--facebook
+                  btn btn--size-s btn--with-icon
+                "
+              >
+                <i
+                  class="
+                    auth-form__socials-icon--facebook
+                    fab
+                    fa-facebook-square
+                  "
+                ></i>
+                <span class="auth-form__socials-title"
+                  >Kết nối với Facebook</span
+                >
+              </a>
+              <a
+                href=""
+                class="
+                  auth-form__socials-link--google
+                  btn btn--size-s btn--with-icon
+                "
+              >
+                <i class="auth-form__socials-icon--google fab fa-google"></i>
+                <span class="auth-form__socials-title--google"
+                  >Kết nối với Google</span
+                ></a
+              >
+            </div>
+          </div>
+
+          <!-- Login -->
+          <div class="auth-form">
+            <div class="auth-form__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng nhập</h3>
+                <span class="auth-form__switch-button">Đăng ký</span>
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Email của bạn"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Mật khẩu của bạn"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-forgot"
+                  >Quên mật khẩu</a
+                >
+                <span class="auth-form__help-separate"></span>
+                <a
+                  href=""
+                  class="auth-form__help-link auth-form__help-need-help"
+                  >Cần trợ giúp ?</a
+                >
+              </div>
+              <div class="auth-form__controls">
+                <button class="btn btn-normal auth-form__controls--back">
+                  Trở lại
+                </button>
+                <button class="btn btn--primary">Đăng nhập</button>
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a
+                href=""
+                class="
+                  auth-form__socials-link--facebook
+                  btn btn--size-s btn--with-icon
+                "
+              >
+                <i
+                  class="
+                    auth-form__socials-icon--facebook
+                    fab
+                    fa-facebook-square
+                  "
+                ></i>
+                <span class="auth-form__socials-title"
+                  >Đăng nhập với Facebook</span
+                >
+              </a>
+              <a
+                href=""
+                class="
+                  auth-form__socials-link--google
+                  btn btn--size-s btn--with-icon
+                "
+              >
+                <i class="auth-form__socials-icon--google fab fa-google"></i>
+                <span class="auth-form__socials-title--google"
+                  >Đăng nhập với Google</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
