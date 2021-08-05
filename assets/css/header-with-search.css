@@ -32,34 +32,80 @@
 }
 
 .header__cart {
-  width: 150px;
+  width: 80px;
   position: relative;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__cart-icon {
   color: var(--white-color);
   font-size: 2.6rem;
-  margin-top: 28px;
   width: 100%;
-  text-align: center;
-  position: relative;
+    text-align: center;
 }
-.header__cart-list{
-    position: absolute;
-    top: 100%;
-    right: 25%;
-    background-color:var(--white-color);
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 300px;
+.header__cart:hover .header__cart-list {
+  display: block;
 }
-.header__cart-list--no-cart{
+.header__cart:hover{
+    cursor: pointer;
+}
+.header__cart-list {
+  position: absolute;
+  top: 100%;
+  right: 15%;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  width: 500px;
+  box-shadow: 0 0 5px #ccc;
+  display: none;
+  animation: fadeIn linear 0.2s;
+  cursor:default;
+}
+
+/* lớp giả */
+.header__cart-list::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  border-color: transparent transparent var(--white-color) transparent;
+  border-width: 20px 25px;
+  border-style: solid;
+  cursor: pointer;
+}
+.header__cart-list--no-cart {
+  padding: 28px 0;
+}
+.header__cart-list--no-cart .header__cart-no-cart-img{
     display: block;
-
 }
-.header__cart-no-cart-img{
-
+.header__cart-no-cart-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: none;
 }
+.header__cart-notice{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    color: var(--primary-color);
+    font-size:1.2rem;
+    font-weight: 500;
+    background-color:var(--white-color);
+    padding: 0 6px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+}
+
+
+
+
+
 
 .header__search-input-wrap {
   flex: 1;
@@ -243,5 +289,4 @@
   flex: 1;
   height: 100%;
   padding: 0 12px;
-
 }
