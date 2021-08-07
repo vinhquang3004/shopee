@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./assets/css/header-with-search.css" />
     <link rel="stylesheet" href="./assets/css/auth-form.css" />
 
+    <link rel="stylesheet" href="./assets/css/app__container.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -174,7 +176,7 @@
                   Trợ giúp
                 </a>
               </li>
-              <li
+              <!-- <li
                 class="
                   header__navbar-item
                   header__navbar-item--bold
@@ -185,6 +187,28 @@
               </li>
               <li class="header__navbar-item header__navbar-item--bold">
                 Đăng nhập
+              </li> -->
+              <li class="header__navbar-item header__navbar-user">
+                <img
+                  src="./assets/img/user.png"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <span class="header__navbar-user-name">Đặng Quang Vinh</span>
+                <ul class="header__navbar-user-menu">
+                  <li class="header__navbar-user-item">
+                    <a href="">Tài khoản của tôi</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">Địa chỉ của tôi</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">Đơn mua</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">Đăng xuất</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -202,32 +226,36 @@
             <div class="header__search">
               <div class="header__search-input-wrap">
                 <input
-                type="text"
-                class="header__search-input"
-                placeholder="Nhập để tìm kiếm sản phẩm"
-              />
-              <!-- Search History -->
-              <div class="header__search-history">
-                <h3>Lịch sử tìm kiếm</h3>
-                <ul class="header__search-history-list">
-                  <li class="header__search-history-item">
-                    <a href="">Kem dưỡng da</a>
-                  </li>
-                  <li class="header__search-history-item">
-                    <a href="">Kem trị mụn</a>
-                  </li>
-                </ul>
-              </div>
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Nhập để tìm kiếm sản phẩm"
+                />
+                <!-- Search History -->
+                <div class="header__search-history">
+                  <h3>Lịch sử tìm kiếm</h3>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-item">
+                      <a href="">Kem dưỡng da</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">Kem trị mụn</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="header__search-select">
                 <span class="header__search-select-label">Trong shop</span>
                 <i class="header__search-select-icon fas fa-chevron-down"></i>
                 <ul class="header__search-option">
-                  <li class="header__search-option-li header__search-option-li--active">
+                  <li
+                    class="
+                      header__search-option-li header__search-option-li--active
+                    "
+                  >
                     <span>Trong shop</span>
-                    <i class=" fas fa-check"></i>
+                    <i class="fas fa-check"></i>
                   </li>
-                  <li class="header__search-option-li ">
+                  <li class="header__search-option-li">
                     <span>Ngoài shop</span>
                     <i class="fas fa-check"></i>
                   </li>
@@ -243,15 +271,184 @@
               <i class="header__cart-icon fas fa-shopping-cart"></i>
               <span class="header__cart-notice">3</span>
               <!-- No cart: header__cart-list--no-cart -->
-              <div class="header__cart-list ">
-                <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+              <div class="header__cart-list">
+                <img
+                  src="./assets/img/no-cart.png"
+                  alt=""
+                  class="header__cart-no-cart-img"
+                />
+                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                <!-- Cart item -->
+                <ul class="header__cart-table-ul">
+                  <li class="header__cart-item-li">
+                    <img
+                      src="./assets/img/loreal.jpg"
+                      alt=""
+                      class="header__cart-item-img"
+                    />
+                    <div class="header__cart-item-info">
+                      <div class="header__cart-item-head">
+                        <h5 class="header__cart-item-name">
+                          Bộ kem điều trị vùng mắt
+                        </h5>
+                        <div class="header__cart-item-span">
+                          <span class="header__cart-item-price"
+                            >2.000.000đ</span
+                          >
+                          <span class="header__cart-item-times">x</span>
+                          <span class="header__cart-item-quantity">2</span>
+                        </div>
+                      </div>
+                      <div class="header__cart-item-body">
+                        <span class="header__cart-item-description"
+                          >Phân loại hàng: Bạc</span
+                        >
+                        <div class="header__cart-item-remove">Xóa</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header__cart-item-li">
+                    <img
+                      src="./assets/img/loreal.jpg"
+                      alt=""
+                      class="header__cart-item-img"
+                    />
+                    <div class="header__cart-item-info">
+                      <div class="header__cart-item-head">
+                        <h5 class="header__cart-item-name">
+                          Bộ kem điều trị vùng mắt
+                        </h5>
+                        <div class="header__cart-item-span">
+                          <span class="header__cart-item-price"
+                            >2.000.000đ</span
+                          >
+                          <span class="header__cart-item-times">x</span>
+                          <span class="header__cart-item-quantity">2</span>
+                        </div>
+                      </div>
+                      <div class="header__cart-item-body">
+                        <span class="header__cart-item-description"
+                          >Phân loại hàng: Bạc</span
+                        >
+                        <div class="header__cart-item-remove">Xóa</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header__cart-item-li">
+                    <img
+                      src="./assets/img/loreal.jpg"
+                      alt=""
+                      class="header__cart-item-img"
+                    />
+                    <div class="header__cart-item-info">
+                      <div class="header__cart-item-head">
+                        <h5 class="header__cart-item-name">
+                          Bộ kem điều trị vùng mắt
+                        </h5>
+                        <div class="header__cart-item-span">
+                          <span class="header__cart-item-price"
+                            >2.000.000đ</span
+                          >
+                          <span class="header__cart-item-times">x</span>
+                          <span class="header__cart-item-quantity">2</span>
+                        </div>
+                      </div>
+                      <div class="header__cart-item-body">
+                        <span class="header__cart-item-description"
+                          >Phân loại hàng: Bạc</span
+                        >
+                        <div class="header__cart-item-remove">Xóa</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <a href="" class="header__cart-view-cart btn btn--primary"
+                  >Xem giỏ hàng</a
+                >
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <div class="container"></div>
+      <!-- Container -->
+      <div class="app__container">
+        <div class="grid">
+          <div class="grid__row app__content">
+            <!-- Menu with width = 2 column -->
+            <div class="grid__column-2">
+              <nav class="category">
+                <h3 class="category__heading">
+                  <i class="category__heading-icon fas fa-list-ul"></i>
+                  Danh mục
+                </h3>
+                <ul class="category-list">
+                  <li class="category-item category-item--active">
+                    <a href="" class="category-item__link">Sản phẩm</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="" class="category-item__link">Sản phẩm</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="" class="category-item__link">Sản phẩm</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="" class="category-item__link">Sản phẩm</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Danh mục width = 8 column -->
+            <div class="grid__column-10">
+              <div class="home-filter">
+                <span class="home-filter__label">Sắp xếp theo</span>
+                <button class="home-filter__btn btn btn--size-s">
+                  Phổ biến
+                </button>
+                <button class="home-filter__btn btn btn--size-s btn--primary">
+                  Mới nhất
+                </button>
+                <button class="home-filter__btn btn btn--size-s">
+                  Bán chạy
+                </button>
+                <div class="select-input">
+                  <span class="select-input-label">Giá</span>
+                  <i class="select-input-icon fas fa-chevron-down"></i>
+                  <!-- list option -->
+                  <ul class="select-input__list">
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link"
+                        >Giá: thấp đến cao</a
+                      >
+                    </li>
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link"
+                        >Giá: cao đến thấp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="home-filter__page">
+                  <span class="home-filter__page-num">
+                    <span class="home-filter__page-current">1</span>/14
+                  </span>
+
+                  <div class="home-filter__page-control">
+                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable ">
+                      <i class="home-filter__page-icon fas fa-chevron-left"></i>
+                    </a>
+                    <a href="" class="home-filter__page-btn">
+                      <i class="home-filter__page-icon fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <footer class="footer"></footer>
     </div>
