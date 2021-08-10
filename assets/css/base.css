@@ -4,6 +4,7 @@
   --text-color: #333;
   --primary-color: #ee4d2d;
   --border-color: #dbdbdb;
+  --star-gold: rgb(255, 210, 60);
 
   --header__navbar-height: 34px;
   --header-with-search-height: calc(
@@ -49,19 +50,26 @@ html {
   /* nếu tổng độ dài các box vượt quá thì sẽ xuống hàng */
   flex-wrap: wrap;
   /* Để tạo ra khoảng cách giữa các cột sản phẩm là 24px */
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 /* -------------------test reponsive------------------------ */
+
 .grid__column-2 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 16.6667%;
 }
 
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+
 .grid__column-10 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 83.3334%;
 }
 

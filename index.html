@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/header__notify.css" />
     <link rel="stylesheet" href="./assets/css/header-with-search.css" />
     <link rel="stylesheet" href="./assets/css/auth-form.css" />
+    <link rel="stylesheet" href="./assets/css/product-item.css">
 
     <link rel="stylesheet" href="./assets/css/app__container.css" />
 
@@ -399,8 +400,9 @@
               </nav>
             </div>
 
-            <!-- Danh mục width = 8 column -->
+            <!--  width = 10 column -->
             <div class="grid__column-10">
+              <!-- Danh mục filter -->
               <div class="home-filter">
                 <span class="home-filter__label">Sắp xếp theo</span>
                 <button class="home-filter__btn btn btn--size-s">
@@ -436,12 +438,70 @@
                   </span>
 
                   <div class="home-filter__page-control">
-                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable ">
+                    <a
+                      href=""
+                      class="
+                        home-filter__page-btn home-filter__page-btn--disable
+                      "
+                    >
                       <i class="home-filter__page-icon fas fa-chevron-left"></i>
                     </a>
                     <a href="" class="home-filter__page-btn">
-                      <i class="home-filter__page-icon fas fa-chevron-right"></i>
+                      <i
+                        class="home-filter__page-icon fas fa-chevron-right"
+                      ></i>
                     </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- home product -->
+              <div class="home-product">
+                <div class="grid__row">
+                  <div class="grid__column-2 grid__column-2-4">
+                    <div class="home-product-item">
+                      <div
+                        class="home-product-item__img"
+                        style="
+                          background-image: url(https://im.uniqlo.com/images/common/pc/goods/441601/item/00_441601_large.jpg);
+                        "
+                      ></div>
+                      <div class="home-product-item__name">
+                        <h4 class="home-product-item__name-h">Cáp sạc nhanh Baseus 2.4A thiết kế bền đẹp tiện dụng cho iPhone XS Max XR X 8 7 iPad</h4>
+                      </div>
+                      <div class="home-product-item__price">
+                        <span class="home-product-item__price-old">9.000.000</span>
+                        <span class="home-product-item__price-current">8.000.000</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <span class="home-product-item__like home-product-item__like--liked">
+                          <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                          <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                        </span>
+                        <div class="home-product-item__rating">
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                        </div>
+                        <span class="home-product-item__sold">88 Đã bán</span>
+                      </div>
+                      <div class="home-product-item__origin">
+                        <span class="home-product-item__brand">Whoo</span>
+                        <span class="home-product-item__origin-name">Nhật Bản</span>
+                      </div>
+
+                      <div class="home-product-item__favourite">
+                        <i class="fas fa-check"></i>
+                        <span class="home-product-item__love">Yêu thích</span>
+                      </div>
+
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__sale-off-percent">10%</span>
+                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
