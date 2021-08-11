@@ -183,6 +183,7 @@ html {
   top: calc(100% - 7px);
   padding-left: 0;
   padding: 10px 0;
+  z-index: 1;
 
   display: none;
 }
